@@ -19,7 +19,8 @@
             - php-imap 
             - php-ldap 
             - php-xmlrpc 
-            - php-apcu    
+            - php-apcu   
+            - php-intl
             - composer
         state: present
         autoclean: yes
