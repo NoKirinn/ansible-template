@@ -2,15 +2,7 @@
 - name: Installation de paquets de base
   hosts: web
   tasks:
-  - name: Installation des paquets
-    apt: name=['apache2','php'] state=latest
-    apt: 
-        name:
-            - apache2
-            - php 
-        state: present
-        autoclean: yes
-  - name: Installation des modules PHP
+  - name: Installation Apache et module
     apt:
     name:
             - apache2
