@@ -1,29 +1,29 @@
 ---
 - name: Installation de paquets de base pour GLPI
-    hosts: web
-    tasks:
-        - name: Installation des paquets Web
-            apt: 
-                name:
-                    - apache2
-                    - php 
-            state: present
-            autoclean: yes
-        - name: Installation des modules PHP
-            apt:
-                name:
-                    - php-mysql
-                    - libapache2-mod
-                    - php-json
-                    - php-gd
-                    - php-curl
-                    - php-mbstring
-                    - php-cas
-                    - php-xml 
-                    - php-cli 
-                    - php-imap 
-                    - php-ldap 
-                    - php-xmlrpc 
-                    - php-apcu
-            state: present
-            autoclean: yes
+hosts: web
+tasks:
+    - name: Installation des paquets Web
+    apt: 
+    name:
+        - apache2
+        - php 
+    state: present
+    autoclean: yes
+    - name: Installation des modules PHP
+    apt:
+    name:
+        - php-mysql
+        - libapache2-mod
+        - php-json
+        - php-gd
+        - php-curl
+        - php-mbstring
+        - php-cas
+        - php-xml 
+        - php-cli 
+        - php-imap 
+        - php-ldap 
+        - php-xmlrpc 
+        - php-apcu
+    state: present
+    autoclean: yes
