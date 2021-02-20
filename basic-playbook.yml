@@ -13,18 +13,20 @@
   - name: Installation des modules PHP
     apt:
     name:
-        - php-mysql
-        - libapache2-mod
-        - php-json
-        - php-gd
-        - php-curl
-        - php-mbstring
-        - php-cas
-        - php-xml 
-        - php-cli 
-        - php-imap 
-        - php-ldap 
-        - php-xmlrpc 
-        - php-apcu
+            - apache2
+            - php 
+            - php-mysql
+            - libapache2-mod
+            - php-json
+            - php-gd
+            - php-curl
+            - php-mbstring
+            - php-cas
+            - php-xml 
+            - php-cli 
+            - php-imap 
+            - php-ldap 
+            - php-xmlrpc 
+            - php-apcu
     state: present
     autoclean: yes
