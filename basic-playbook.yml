@@ -19,7 +19,8 @@
             - php-imap 
             - php-ldap 
             - php-xmlrpc 
-            - php-apcu            
+            - php-apcu    
+            - composer
         state: present
         autoclean: yes
   - name: Clone a repo with separate git directory
