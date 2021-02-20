@@ -41,3 +41,7 @@
     ansible.builtin.shell:
       cmd: php bin/console dependencies install
       chdir: /var/www/html/glpi
+  - name: Restart service httpd, in all cases
+    ansible.builtin.service:
+      name: apache2
+      state: restarted
