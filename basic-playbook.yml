@@ -3,4 +3,4 @@
   hosts: web
   tasks:
   - name: Installation des paquets
-    apt: name=['apache2','php'] state=latestph
+    apt: name=['apache2','php'] state=latest
