@@ -1,9 +1,0 @@
----
-- name: Installation de paquets de base
-  hosts: web
-  tasks:
-  - name: Installation des paquets
-    apt: name={{ item }} state= latest
-    with_items:
-      - apache2
-      - php
