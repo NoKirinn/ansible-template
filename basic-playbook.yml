@@ -26,3 +26,11 @@
     ansible.builtin.git:
       repo: https://github.com/glpi-project/glpi.git
       dest: /var/www/html/glpi
+  - name: Recursively change ownership of a directory
+    ansible.builtin.file:
+      path: /var/www/html/glpi
+      state: directory
+      recurse: yes
+      owner: www-data
+      group: www-data
+      mode: '0755'
