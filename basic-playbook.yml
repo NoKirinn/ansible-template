@@ -38,7 +38,7 @@
       group: www-data
       mode: '0755'
   - name: install dependencies
-    ansible.builtin.shell: php /var/www/html/glpi/bin/console dependencies install
+    ansible.builtin.shell: "php /var/www/html/glpi/bin/console dependencies install"
     args:
       warn: no
   - name: Restart service httpd, in all cases
