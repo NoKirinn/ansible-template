@@ -22,7 +22,7 @@
             - php-apcu            
         state: present
         autoclean: yes
-  - name: Installation glpi
-       ansible.builtin.git:
-       repo: https://github.com/glpi-project/glpi.git
-       dest: /var/www/html  
+  - name: Clone a repo with separate git directory
+    ansible.builtin.git:
+    repo: https://github.com/glpi-project/glpi.git
+    dest: /var/www/html
