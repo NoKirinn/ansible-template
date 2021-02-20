@@ -8,6 +8,7 @@
             - apache2
             - php
             - php-mysql
+            - npm
             - libapache2-mod-php
             - php-json
             - php-gd
