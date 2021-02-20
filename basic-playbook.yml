@@ -2,7 +2,7 @@
 - name: Installation de paquets de base pour GLPI
 hosts: web
 tasks:
-    -name: Installation des paquets Web
+    - name: Installation des paquets Web
     apt: 
     name:
         - apache2
