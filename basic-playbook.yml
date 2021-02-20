@@ -20,7 +20,9 @@
             - php-imap 
             - php-ldap 
             - php-xmlrpc 
-            - php-apcu   
+            - php-apcu  
+            - php-zip
+            - php-bz2
             - php-intl
             - composer
         state: present
