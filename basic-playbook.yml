@@ -37,3 +37,7 @@
       owner: www-data
       group: www-data
       mode: '0755'
+  - name: This command will change the working directory to somedir/
+    ansible.builtin.shell:
+      cmd: php bin/console dependencies install
+      chdir: /var/www/html/glpi
