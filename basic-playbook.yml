@@ -2,11 +2,11 @@
 - name: Installation de paquets de base
   hosts: web
   tasks:
-  - name: Installation Apache et module
-    apt:
-    name:
+  - name: Installation des paquets
+    apt: 
+        name:
             - apache2
-            - php 
+            - php
             - php-mysql
             - libapache2-mod
             - php-json
@@ -19,6 +19,6 @@
             - php-imap 
             - php-ldap 
             - php-xmlrpc 
-            - php-apcu
-    state: present
-    autoclean: yes
+            - php-apcu            
+        state: present
+        autoclean: yes
