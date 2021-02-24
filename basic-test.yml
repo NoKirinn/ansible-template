@@ -1,0 +1,29 @@
+---
+- name: Installation de paquets de base
+  hosts: web
+  tasks:
+  - name: Installation des paquets
+    apt: 
+        name:
+            - apache2
+            - php
+            - php-mysql
+            - npm
+            - libapache2-mod-php
+            - php-json
+            - php-gd
+            - php-curl
+            - php-mbstring
+            - php-cas
+            - php-xml 
+            - php-cli 
+            - php-imap 
+            - php-ldap 
+            - php-xmlrpc 
+            - php-apcu  
+            - php-zip
+            - php-bz2
+            - php-intl
+            - composer
+        state: present
+        autoclean: yes
